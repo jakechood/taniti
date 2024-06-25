@@ -6,7 +6,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.whiteSandBeachImg, .airplaneImg, .rocksImg {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,8 +26,8 @@ body, html {
 }
 
 /* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
+.rocksImg {
+  background-image: url(./images/pexels_rockycliff.jpg);
   min-height: 400px;
 }
 
