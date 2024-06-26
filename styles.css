@@ -7,7 +7,7 @@ body, html {
 
 /* Active nav element responsive to scrolling */
 .active {
-  background-color: #777;
+  color: black;
 }
 /* Create a Parallax Effect */
 .whiteSandBeachImg, .airplaneImg, .rocksImg {
