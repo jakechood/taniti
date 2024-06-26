@@ -32,21 +32,21 @@ function onClick(element) {
 //   Smooth scrolling
       $("#home").click(function() {
            $('html, body').animate({
-               scrollTop:        $("#one").offset().top-66
+               scrollTop:        $("#home").offset().top-66
            }, 1000);
         return false;
        });
       
       $("#localLiving").click(function() {
            $('html, body') .animate({
-               scrollTop:        $("#two").offset().top-112
+               scrollTop:        $("#localLiving").offset().top-112
            }, 1000);
         return false;
        });
       
       $("#transportation").click(function() {
            $(' html,body') .animate({
-               scrollTop:        $("#three").offset().top-112
+               scrollTop:        $("#transportation").offset().top-112
            }, 1000);
         return false;
        });
@@ -54,7 +54,7 @@ function onClick(element) {
       $("#entertainment").click(function() {
         $(this).addClass("active");
            $('html,body ') .animate({
-               scrollTop:        $("#four").offset().top-112
+               scrollTop:        $("#entertainment").offset().top-112
            }, 1000);
         return false;
        });
@@ -62,12 +62,12 @@ function onClick(element) {
        $("#faq").click(function() {
         $(this).addClass("active");
            $('html,body ') .animate({
-               scrollTop:        $("#five").offset().top-112
+               scrollTop:        $("#faq").offset().top-112
            }, 1000);
         return false;
        });
 
-       $('#two').waypoint(function() {
+       $('#localLiving').waypoint(function() {
       
         $(".container ul li").children().removeClass("active");
         $("#localLiving").addClass("active");
@@ -75,22 +75,22 @@ function onClick(element) {
       }, { offset: 101 });
       
       
-      $('#three').waypoint(function() {
+      $('#transportation').waypoint(function() {
         $(".container ul li").children().removeClass("active");
         $("#transportation").addClass("active");
       }, { offset: 101 });
       
-      $('#four').waypoint(function() {
+      $('#entertainment').waypoint(function() {
         $(".container ul li").children().removeClass("active");
         $("#entertainment").addClass("active");
       }, { offset: 101 });
 
-      $('#five').waypoint(function() {
+      $('#faq').waypoint(function() {
         $(".container ul li").children().removeClass("active");
         $("#faq").addClass("active");
       }, { offset: 101 });
       
-      $('#one').waypoint(function() {
+      $('#home').waypoint(function() {
         $(".container ul li").children().removeClass("active");
         $("#home").addClass("active");
       }, { offset: 0 });
