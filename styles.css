@@ -5,6 +5,10 @@ body, html {
   line-height: 1.8;
 }
 
+/* Active nav element responsive to scrolling */
+.active {
+  background-color: #777;
+}
 /* Create a Parallax Effect */
 .whiteSandBeachImg, .airplaneImg, .rocksImg {
   background-attachment: fixed;
