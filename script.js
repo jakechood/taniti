@@ -29,7 +29,7 @@ function onClick(element) {
 
   $('#home').addClass("active");
 
-//   Smooth scrolling
+//   Smooth scrolling nav effect
       $("#home").click(function() {
            $('html, body').animate({
                scrollTop:        $("#home").offset().top-66
@@ -94,3 +94,18 @@ function onClick(element) {
         $(".container ul li").children().removeClass("active");
         $("#home").addClass("active");
       }, { offset: 0 });
+
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+      }
+      function toggleDarkMode() {
+        let isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+      }
+      
+      // On page load
+      document.addEventListener('DOMContentLoaded', (event) => {
+        if (localStorage.getItem('darkMode') === 'enabled') {
+          document.body.classList.add('dark-mode');
+        }
+      });
