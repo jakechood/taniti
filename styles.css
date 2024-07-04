@@ -18,6 +18,11 @@ body {
   color: var(--text-color-light);
   background-color: var(--background-color-light);
 }
+.outlineFont {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--text-color-light);
+}
+
 /* Dark Mode */
 .dark-mode {
   background-color: var(--background-color-dark);

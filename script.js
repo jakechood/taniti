@@ -109,5 +109,6 @@ function onClick(element) {
         if (localStorage.getItem('darkMode') === 'enabled') {
           document.body.classList.add('dark-mode');
           document.getElementById("entertainment").classList.add('dark-mode');
+          document.getElementByClass("outlineFont").classList.add('dark-mode');
         }
       });
