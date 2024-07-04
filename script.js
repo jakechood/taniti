@@ -94,7 +94,8 @@ function onClick(element) {
         $(".container ul li").children().removeClass("active");
         $("#home").addClass("active");
       }, { offset: 0 });
-
+      
+        // Dark Mode   
       function toggleDarkMode() {
         document.body.classList.toggle('dark-mode');
       }
