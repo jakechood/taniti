@@ -14,6 +14,10 @@ body {
   background-color: var(--background-color-light);
   color: var(--text-color-light);
 }
+#entertainment .dark-mode {
+  color: var(--text-color-light);
+  background-color: var(--background-color-light);
+}
 /* Dark Mode */
 .dark-mode {
   background-color: var(--background-color-dark);

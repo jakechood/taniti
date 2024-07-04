@@ -108,5 +108,6 @@ function onClick(element) {
       document.addEventListener('DOMContentLoaded', (event) => {
         if (localStorage.getItem('darkMode') === 'enabled') {
           document.body.classList.add('dark-mode');
+          document.getElementById("entertainment").classList.add('dark-mode');
         }
       });
